@@ -1,0 +1,89 @@
+@import '../css/fonts.css';
+
+body > header {
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.personal_details {
+    padding: 16px;
+}
+.personal_details figure {
+    margin: 0;
+}
+.details_img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 12px;
+}
+.personal_details h1 {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F4F4F;
+    margin-bottom: 0;
+
+}
+.details_job {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    /* Gray 3 */
+    color: #828282;
+}
+.links_social {
+    list-style: none;
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.links_social .icon {
+    word-break: break-all;
+    text-decoration: none;
+    font-family:MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+.icon span {
+    margin-inline-start: 18px;
+}
+.personal_details p {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* Gray 3 */
+    color: #828282;
+}
+@media (min-width: 768px) {
+.personal_details {
+    display: flex;
+    gap: 2rem;
+}
+.personal_details .details_img {
+    max-width: 272px;
+    min-width: 272px;
+}
+.details_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.personal_details .links_social {
+    margin-top: 16px;
+    /* margin-bottom: unset; */
+}
+}

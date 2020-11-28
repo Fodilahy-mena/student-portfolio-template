@@ -1,0 +1,63 @@
+
+@import '../css/fonts.css';
+
+.section_blog {
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.blog {
+    padding: 16px;
+}
+.blog figure {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 40px;
+}
+.blog h2 {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #E0E0E0;
+    margin-top: 0;
+}
+.blog figure > h3 {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    height: 87px;
+    margin-top: 0;
+}
+.blog p {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #828282;
+}
+
+@media (max-width: 365px) {
+    .blog figure {
+        display: block;
+    }
+    .blog .css-img {
+        left: 0;
+    }
+}
+@media (min-width: 536px) {
+    .blog figure > h3 {
+        width: 178px;
+    }
+}

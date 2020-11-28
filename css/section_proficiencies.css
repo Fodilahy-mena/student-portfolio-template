@@ -1,0 +1,74 @@
+@import '../css/fonts.css';
+
+.section_proficiencies {
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.proficiencies {
+    padding: 16px;
+}
+.section_proficiencies h2 {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Gray 2 */
+    color: #4F4F4F;
+    margin-top: 0;
+}
+.proficiencies_container {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    margin-bottom: 27px;
+}
+
+.proficiencies_container:last-child {
+    margin-bottom: 0;
+}
+.proficiencies_container > label {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #4F4F4F;
+}
+.proficiency {
+    max-width: 100%;
+    min-width: 100%;
+    position: relative;
+    top: 6px;
+}
+.proficiency[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 9px;
+  }
+
+.proficiency[value]::-webkit-progress-bar {
+    background-color:#f6eeee;
+    /* background-color:#C4C4C4; */
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  .proficiency[value]::-webkit-progress-value {
+    background: rgba(47, 128, 237, 0.7);
+    /* background: rgb(0,139,139, .7); */
+    border-radius: 12px; 
+   }
+
+   @media (max-width: 365px) {
+    .proficiencies_container {
+        display: block;
+    }
+}
+  
