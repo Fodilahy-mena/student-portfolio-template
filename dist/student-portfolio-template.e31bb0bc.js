@@ -32046,8 +32046,8 @@ exports.ServerStyleSheet = Ue;
 "production" !== "development" && "undefined" != typeof navigator && "ReactNative" === navigator.product && console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native"), "production" !== "development" && "test" !== "development" && (window["__styled-components-init__"] = window["__styled-components-init__"] || 0, 1 === window["__styled-components-init__"] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window["__styled-components-init__"] += 1);
 var _default = qe;
 exports.default = _default;
-},{"react-is":"node_modules/react-is/index.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","@emotion/stylis":"node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","hoist-non-react-statics":"node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"images/computer.jpg":[function(require,module,exports) {
-module.exports = "/computer.dd5dc830.jpg";
+},{"react-is":"node_modules/react-is/index.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","@emotion/stylis":"node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","hoist-non-react-statics":"node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"images/computer1.jpg":[function(require,module,exports) {
+module.exports = "/computer1.e881c479.jpg";
 },{}],"react/Blog.js":[function(require,module,exports) {
 "use strict";
 
@@ -32060,12 +32060,12 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-var _computer = _interopRequireDefault(require("../images/computer.jpg"));
+var _computer = _interopRequireDefault(require("../images/computer1.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    max-width: 100%;\n    min-width: 100%;\n    position: relative;\n    left: 16px;\n    bottom: 16px;\n    // border-radius: 12px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    max-width: 100%;\n    min-width: 100%;\n    position: relative;\n    left: 16px;\n    bottom: 16px;\n    // border-radius: 12px;\n    -webkit-border-top-left-radius: 12px;\n    -webkit-border-bottom-left-radius: 12px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32079,15 +32079,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var ComputerImgStyle = _styledComponents.default.img(_templateObject());
 
 function Blog() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Blog"), /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement("h3", null, "How to organize your CSS"), /*#__PURE__*/_react.default.createElement(ComputerImgStyle, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h2", null, "Blog"), /*#__PURE__*/_react.default.createElement("h3", null, "How to organize your CSS"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi."), /*#__PURE__*/_react.default.createElement("p", null, "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.")), /*#__PURE__*/_react.default.createElement("a", null, "dev.to")), /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement(ComputerImgStyle, {
     className: "css-img",
     src: _computer.default
-  })), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi."), /*#__PURE__*/_react.default.createElement("p", null, "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.")), /*#__PURE__*/_react.default.createElement("a", null, "dev.to")));
+  })));
 }
 
 var _default = Blog;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/computer.jpg":"images/computer.jpg"}],"images/interior1.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/computer1.jpg":"images/computer1.jpg"}],"images/interior1.png":[function(require,module,exports) {
 module.exports = "/interior1.4d6db535.png";
 },{}],"react/Gallery.js":[function(require,module,exports) {
 "use strict";
@@ -32319,7 +32319,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63753" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61387" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

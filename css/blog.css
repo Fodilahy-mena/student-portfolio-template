@@ -12,10 +12,10 @@
 .blog {
     padding: 16px;
 }
-.blog figure {
+.blog {
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    /* display: grid;
+    grid-template-columns: auto auto; */
     margin-bottom: 40px;
 }
 .blog h2 {
@@ -28,7 +28,7 @@
     color: #E0E0E0;
     margin-top: 0;
 }
-.blog figure > h3 {
+.blog h3 {
     font-family: MontserratMedium;
     font-style: normal;
     font-weight: 500;
@@ -48,6 +48,16 @@
     color: #828282;
 }
 
+.blog article > a {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #5C94E1;
+}
+
 @media (max-width: 365px) {
     .blog figure {
         display: block;
@@ -59,5 +69,12 @@
 @media (min-width: 536px) {
     .blog figure > h3 {
         width: 178px;
+    }
+}
+
+@media (min-width: 768px) {
+    .blog {
+        display: flex;
+        gap: 2rem;
     }
 }
