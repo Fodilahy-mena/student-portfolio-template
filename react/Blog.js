@@ -6,17 +6,20 @@ const ComputerImgStyle = styled.img`
     min-width: 100%;
     position: relative;
     left: 16px;
-    bottom: 16px;
-    // border-radius: 12px;
     -webkit-border-top-left-radius: 12px;
     -webkit-border-bottom-left-radius: 12px;
 `;
 function Blog() {
     return (
-        <>
-            <article>
+        <>  
+            <header>
                 <h2>Blog</h2>
                 <h3>How to organize your CSS</h3>
+            </header>
+            <figure>
+                <ComputerImgStyle className="css-img" src={ComputerImg}/>
+            </figure>
+            <article>
                 <div>
                     <p>
                         In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.
@@ -24,12 +27,9 @@ function Blog() {
                     <p>
                         Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
                     </p>
+                    <a>dev.to</a>
                 </div>
-                <a>dev.to</a>
-            </article> 
-            <figure>
-                <ComputerImgStyle className="css-img" src={ComputerImg}/>
-            </figure>
+            </article>
         </>
     )
 }

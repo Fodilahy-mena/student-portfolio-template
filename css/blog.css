@@ -11,13 +11,13 @@
 }
 .blog {
     padding: 16px;
-}
-.blog {
+    /* display: grid; */
+    /* gap: 2rem; */
+    /* grid-template-columns: repeat(2, 1fr); */
     margin: 0;
-    /* display: grid;
-    grid-template-columns: auto auto; */
     margin-bottom: 40px;
 }
+
 .blog h2 {
     font-family: MontserratMedium;
     font-style: normal;
@@ -47,8 +47,14 @@
 
     color: #828282;
 }
+.blog figure {
+    margin: 0;
+}
+.blog header {
+    max-width: 198px;
+}
 
-.blog article > a {
+.blog article a {
     font-family: MontserratMedium;
     font-style: normal;
     font-weight: 500;
@@ -73,8 +79,5 @@
 }
 
 @media (min-width: 768px) {
-    .blog {
-        display: flex;
-        gap: 2rem;
-    }
+
 }

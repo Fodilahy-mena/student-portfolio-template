@@ -23,6 +23,11 @@
     color: #4F4F4F;
     margin-top: 0;
 }
+.proficiencies_devider {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
 .proficiencies_container {
     display: grid;
     grid-template-columns: .5fr 1fr;
@@ -69,6 +74,13 @@
    @media (max-width: 365px) {
     .proficiencies_container {
         display: block;
+    }
+}
+@media (min-width: 768px) {
+    .proficiencies_devider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 53px;
     }
 }
   

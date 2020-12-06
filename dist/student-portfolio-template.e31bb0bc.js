@@ -32065,7 +32065,7 @@ var _computer = _interopRequireDefault(require("../images/computer1.jpg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    max-width: 100%;\n    min-width: 100%;\n    position: relative;\n    left: 16px;\n    bottom: 16px;\n    // border-radius: 12px;\n    -webkit-border-top-left-radius: 12px;\n    -webkit-border-bottom-left-radius: 12px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    max-width: 100%;\n    min-width: 100%;\n    position: relative;\n    left: 16px;\n    -webkit-border-top-left-radius: 12px;\n    -webkit-border-bottom-left-radius: 12px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32079,15 +32079,97 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var ComputerImgStyle = _styledComponents.default.img(_templateObject());
 
 function Blog() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h2", null, "Blog"), /*#__PURE__*/_react.default.createElement("h3", null, "How to organize your CSS"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi."), /*#__PURE__*/_react.default.createElement("p", null, "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.")), /*#__PURE__*/_react.default.createElement("a", null, "dev.to")), /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement(ComputerImgStyle, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Blog"), /*#__PURE__*/_react.default.createElement("h3", null, "How to organize your CSS")), /*#__PURE__*/_react.default.createElement("figure", null, /*#__PURE__*/_react.default.createElement(ComputerImgStyle, {
     className: "css-img",
     src: _computer.default
-  })));
+  })), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi."), /*#__PURE__*/_react.default.createElement("p", null, "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."), /*#__PURE__*/_react.default.createElement("a", null, "dev.to"))));
 }
 
 var _default = Blog;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/computer1.jpg":"images/computer1.jpg"}],"images/interior1.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/computer1.jpg":"images/computer1.jpg"}],"projectsData.json":[function(require,module,exports) {
+module.exports = [{
+  "name": "React",
+  "id": "1"
+}, {
+  "name": "HTML & CSS",
+  "id": "2"
+}, {
+  "name": "Responsive",
+  "id": "3"
+}];
+},{}],"react/FormFilter.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _projectsData = _interopRequireDefault(require("../projectsData.json"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function FormFilter() {
+  console.log(_projectsData.default);
+
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      openForm = _useState2[0],
+      setOpenForm = _useState2[1];
+
+  var _useState3 = (0, _react.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isVisited = _useState4[0],
+      setIsVisited = _useState4[1];
+
+  function toggleShowForm() {
+    setOpenForm(true);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  function handleVisite() {
+    setIsVisited(true);
+  }
+
+  return /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: handleSubmit,
+    onMouseEnter: toggleShowForm
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Projects (3)"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "button_container"
+  }, openForm && _projectsData.default.map(function (project) {
+    return /*#__PURE__*/_react.default.createElement("button", {
+      onClick: handleVisite,
+      className: "form_button",
+      key: project.id
+    }, project.name);
+  })));
+}
+
+var _default = FormFilter;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../projectsData.json":"projectsData.json"}],"images/interior1.png":[function(require,module,exports) {
 module.exports = "/interior1.4d6db535.png";
 },{}],"react/Gallery.js":[function(require,module,exports) {
 "use strict";
@@ -32215,54 +32297,44 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Proficiencies() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Front end"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "proficiencies_devider"
+  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
     className: "proficiencies_container"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    for: "react"
-  }, "React"), /*#__PURE__*/_react.default.createElement("progress", {
+  }, /*#__PURE__*/_react.default.createElement("label", null, "React"), /*#__PURE__*/_react.default.createElement("progress", {
     className: "proficiency",
     value: "90",
     max: "100"
   }, " 90% ")), /*#__PURE__*/_react.default.createElement("div", {
     className: "proficiencies_container"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    for: "javaScript"
-  }, "JavaScript"), /*#__PURE__*/_react.default.createElement("progress", {
+  }, /*#__PURE__*/_react.default.createElement("label", null, "JavaScript"), /*#__PURE__*/_react.default.createElement("progress", {
     className: "proficiency",
     value: "85",
     max: "100"
   }, " 85% ")), /*#__PURE__*/_react.default.createElement("div", {
     className: "proficiencies_container"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    for: "css"
-  }, "CSS"), /*#__PURE__*/_react.default.createElement("progress", {
+  }, /*#__PURE__*/_react.default.createElement("label", null, "CSS"), /*#__PURE__*/_react.default.createElement("progress", {
     className: "proficiency",
     value: "93",
     max: "100"
-  }, " 93% ")), /*#__PURE__*/_react.default.createElement("div", {
+  }, " 93% "))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
     className: "proficiencies_container"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    for: "vue"
-  }, "Vue"), /*#__PURE__*/_react.default.createElement("progress", {
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Vue"), /*#__PURE__*/_react.default.createElement("progress", {
     className: "proficiency",
     value: "16",
     max: "100"
   }, " 26% ")), /*#__PURE__*/_react.default.createElement("div", {
     className: "proficiencies_container"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    for: "redux"
-  }, "Redux"), /*#__PURE__*/_react.default.createElement("progress", {
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Redux"), /*#__PURE__*/_react.default.createElement("progress", {
     className: "proficiency",
     value: "22",
     max: "100"
   }, " 22% ")), /*#__PURE__*/_react.default.createElement("div", {
     className: "proficiencies_container"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    for: "react-native"
-  }, "React Native"), /*#__PURE__*/_react.default.createElement("progress", {
+  }, /*#__PURE__*/_react.default.createElement("label", null, "React Native"), /*#__PURE__*/_react.default.createElement("progress", {
     className: "proficiency",
     value: "87",
     max: "100"
-  }, " 87% ")));
+  }, " 87% ")))));
 }
 
 var _default = Proficiencies;
@@ -32275,6 +32347,8 @@ var _react = _interopRequireDefault(require("react"));
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _Blog = _interopRequireDefault(require("./react/Blog"));
+
+var _FormFilter = _interopRequireDefault(require("./react/FormFilter"));
 
 var _Gallery = _interopRequireDefault(require("./react/Gallery"));
 
@@ -32291,7 +32365,9 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_Gallery.def
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_Proficiencies.default, null), document.getElementById('proficiencies'));
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_Blog.default, null), document.getElementById('blog'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./react/Blog":"react/Blog.js","./react/Gallery":"react/Gallery.js","./react/PersonalDetails":"react/PersonalDetails.js","./react/Proficiencies":"react/Proficiencies.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_FormFilter.default, null), document.getElementById('filter'));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./react/Blog":"react/Blog.js","./react/FormFilter":"react/FormFilter.js","./react/Gallery":"react/Gallery.js","./react/PersonalDetails":"react/PersonalDetails.js","./react/Proficiencies":"react/Proficiencies.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -32319,7 +32395,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61387" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57024" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

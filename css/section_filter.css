@@ -1,0 +1,50 @@
+@import '../css/fonts.css';
+
+.section_filter {
+    word-break: break-all;
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.filter {
+    padding: 16px;
+}
+.filter h3 {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.button_container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.form_button {
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 23px;
+    background: #6AA2EF;
+    border: 1px solid #6AA2EF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: white;
+}
+
+.form_button:hover {
+    color: #6AA2EF;
+    background-color: unset;
+    border: 1px solid #6AA2EF;
+}
+.btn_visited {
+    border: 1px solid #4F4F4F;
+    color: #4F4F4F;
+    background-color: unset;
+}

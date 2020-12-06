@@ -244,6 +244,11 @@ body > header {
     color: #4F4F4F;
     margin-top: 0;
 }
+.proficiencies_devider {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
 .proficiencies_container {
     display: grid;
     grid-template-columns: .5fr 1fr;
@@ -292,6 +297,13 @@ body > header {
         display: block;
     }
 }
+@media (min-width: 768px) {
+    .proficiencies_devider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 53px;
+    }
+}
   
 
 .section_blog {
@@ -304,13 +316,13 @@ body > header {
 }
 .blog {
     padding: 16px;
-}
-.blog {
+    /* display: grid; */
+    /* gap: 2rem; */
+    /* grid-template-columns: repeat(2, 1fr); */
     margin: 0;
-    /* display: grid;
-    grid-template-columns: auto auto; */
     margin-bottom: 40px;
 }
+
 .blog h2 {
     font-family: MontserratMedium;
     font-style: normal;
@@ -340,8 +352,14 @@ body > header {
 
     color: #828282;
 }
+.blog figure {
+    margin: 0;
+}
+.blog header {
+    max-width: 198px;
+}
 
-.blog article > a {
+.blog article a {
     font-family: MontserratMedium;
     font-style: normal;
     font-weight: 500;
@@ -366,10 +384,55 @@ body > header {
 }
 
 @media (min-width: 768px) {
-    .blog {
-        display: flex;
-        gap: 2rem;
-    }
+
+}
+.section_filter {
+    word-break: break-all;
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.filter {
+    padding: 16px;
+}
+.filter h3 {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.button_container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.form_button {
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 23px;
+    background: #6AA2EF;
+    border: 1px solid #6AA2EF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: white;
+}
+
+.form_button:hover {
+    color: #6AA2EF;
+    background-color: unset;
+    border: 1px solid #6AA2EF;
+}
+.btn_visited {
+    border: 1px solid #4F4F4F;
+    color: #4F4F4F;
+    background-color: unset;
 }
 
 /*# sourceMappingURL=/student-portfolio-template.9ad09f98.css.map */
