@@ -434,5 +434,20 @@ body > header {
     color: #4F4F4F;
     background-color: unset;
 }
+.section_projects {
+    word-break: break-all;
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.projects {
+    padding: 16px;
+}
+.projects figure {
+    margin: 0;
+}
 
 /*# sourceMappingURL=/student-portfolio-template.9ad09f98.css.map */

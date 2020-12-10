@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import Projects from '../projectsData.json'
+import ProjectsType from '../projectsType.json'
 function FormFilter() {
-    console.log(Projects)
+    console.log(ProjectsType)
     const [openForm, setOpenForm] = useState(false);
     const [isVisited, setIsVisited] = useState(false);
     function toggleShowForm() {
@@ -11,15 +11,16 @@ function FormFilter() {
         e.preventDefault();
     }
 
-    function handleVisite() {
+    function handleProjectType(e) {
         setIsVisited(true);
+        console.log(e.target.value)
     }
     return (
         <form onSubmit={handleSubmit} onMouseEnter={toggleShowForm}>
             <h3>Projects (3)</h3>
             <div className="button_container">
-                {openForm && Projects.map(project => (
-                <button onClick={handleVisite} className={`form_button`} key={project.id}>{project.name}</button>
+                {openForm && ProjectsType.map(project => (
+                <button onClick={handleProjectType} value={project.name} className={`form_button`} key={project.id}>{project.name}</button>
             ))}
             </div>
         </form>
